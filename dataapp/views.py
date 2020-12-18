@@ -2,5 +2,5 @@ from django.shortcuts import render
 from django.http import HttpResponse
 
 def homepageview(request):
-	return HttpResponse("This will be the homepage")
+	return render(request, 'dataapp/homepage.html')
 # Create your views here.
